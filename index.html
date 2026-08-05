@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakistan Medical Store | Trusted Pharmacy in Hyderabad Pakistan</title>
+<meta name="description" content="Pakistan Medical Store provides genuine medicines, healthcare products, prescription medicines, and excellent customer service in Latifabad Hyderabad Pakistan.">
+<meta name="keywords" content="Medical Store, Pharmacy Hyderabad, Medicine Shop, Healthcare Products, Pakistan Medical Store, Latifabad Pharmacy, Prescription Medicines, Medical Shop Hyderabad">
+<meta property="og:title" content="Pakistan Medical Store | Trusted Pharmacy in Hyderabad Pakistan">
+<meta property="og:description" content="Genuine medicines & healthcare products in Latifabad, Hyderabad. Call, WhatsApp, or get directions.">
+<meta property="og:type" content="business.business">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230F9D58'/%3E%3Crect x='42' y='22' width='16' height='56' rx='6' fill='white'/%3E%3Crect x='22' y='42' width='56' height='16' rx='6' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --primary:#0F9D58;
+    --primary-dark:#0B7A44;
+    --secondary:#1E88E5;
+    --accent:#00C853;
+    --bg:#F8FAFC;
+    --card:#FFFFFF;
+    --text:#1F2937;
+    --text-soft:#5B6B7A;
+    --line: rgba(15,157,88,0.14);
+    --radius: 18px;
+    --shadow: 0 10px 30px rgba(16,45,35,0.08);
+    --shadow-lg: 0 24px 60px rgba(16,45,35,0.14);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter', sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    overflow-x:hidden;
+    line-height:1.6;
+  }
+  h1,h2,h3,h4{ font-family:'Poppins', sans-serif; font-weight:700; letter-spacing:-0.02em; }
+  a{ text-decoration:none; color:inherit; }
+  ul{ list-style:none; }
+  img{ max-width:100%; display:block; }
+  .container{ max-width:1180px; margin:0 auto; padding:0 24px; }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:13px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase;
+    color:var(--primary-dark); background:rgba(15,157,88,0.09);
+    padding:7px 16px; border-radius:99px; margin-bottom:16px;
+  }
+  .eyebrow .dot{ width:6px; height:6px; border-radius:50%; background:var(--accent); animation:pulse 1.8s infinite; }
+  @keyframes pulse{ 0%,100%{opacity:1;} 50%{opacity:.3;} }
+  .section-title{ font-size:clamp(28px,4vw,40px); margin-bottom:14px; }
+  .section-sub{ color:var(--text-soft); font-size:16.5px; max-width:560px; }
+  .section-head{ margin-bottom:48px; }
+  .section-head.center{ text-align:center; margin-left:auto; margin-right:auto; }
+  .section-head.center .section-sub{ margin-left:auto; margin-right:auto; }
+  section{ padding:96px 0; position:relative; }
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    padding:15px 30px; border-radius:99px; font-weight:600; font-size:15px;
+    border:none; cursor:pointer; transition:all .3s cubic-bezier(.4,0,.2,1);
+    white-space:nowrap;
+  }
+  .btn-primary{ background:linear-gradient(135deg,var(--primary),var(--accent)); color:#fff; box-shadow:0 8px 24px rgba(15,157,88,0.3);}
+  .btn-primary:hover{ transform:translateY(-3px); box-shadow:0 14px 34px rgba(15,157,88,0.4); }
+  .btn-outline{ background:#fff; color:var(--primary-dark); border:1.5px solid var(--line); }
+  .btn-outline:hover{ border-color:var(--primary); transform:translateY(-3px); box-shadow:var(--shadow); }
+  .btn-whatsapp{ background:#25D366; color:#fff; box-shadow:0 8px 24px rgba(37,211,102,0.3); }
+  .btn-whatsapp:hover{ transform:translateY(-3px); box-shadow:0 14px 34px rgba(37,211,102,0.4); }
+  .btn-sm{ padding:11px 22px; font-size:14px; }
+
+  /* ===== NAVBAR ===== */
+  .navbar{
+    position:fixed; top:0; left:0; right:0; z-index:1000;
+    background:rgba(248,250,252,0.72); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid transparent;
+    transition:all .35s ease;
+  }
+  .navbar.scrolled{ background:rgba(255,255,255,0.92); border-bottom:1px solid var(--line); box-shadow:0 4px 24px rgba(16,45,35,0.06); }
+  .nav-inner{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:1180px; margin:0 auto; }
+  .brand{ display:flex; align-items:center; gap:10px; font-family:'Poppins'; font-weight:700; font-size:19px; color:var(--text); }
+  .brand-mark{ width:38px; height:38px; border-radius:11px; background:linear-gradient(135deg,var(--primary),var(--accent)); position:relative; flex:none; }
+  .brand-mark::before, .brand-mark::after{ content:""; position:absolute; background:#fff; border-radius:2px; }
+  .brand-mark::before{ width:5px; height:20px; top:9px; left:16.5px; }
+  .brand-mark::after{ width:20px; height:5px; left:9px; top:16.5px; }
+  .nav-links{ display:flex; gap:34px; align-items:center; }
+  .nav-links a{ font-size:14.5px; font-weight:600; color:var(--text-soft); transition:color .2s; position:relative; }
+  .nav-links a:hover{ color:var(--primary-dark); }
+  .nav-cta{ display:flex; gap:10px; align-items:center; }
+  .burger{ display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:6px; }
+  .burger span{ width:24px; height:2.5px; background:var(--text); border-radius:2px; transition:.3s; }
+  .mobile-menu{ display:none; flex-direction:column; gap:2px; background:#fff; padding:14px 24px 22px; border-top:1px solid var(--line); }
+  .mobile-menu a{ padding:12px 0; font-weight:600; color:var(--text); border-bottom:1px solid #F0F3F1; font-size:15px; }
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative; padding:168px 0 110px; overflow:hidden;
+    background:
+      radial-gradient(680px 460px at 84% -6%, rgba(30,136,229,0.14), transparent 60%),
+      radial-gradient(760px 520px at -6% 110%, rgba(0,200,83,0.14), transparent 60%),
+      var(--bg);
+  }
+  .hero-grid{ display:grid; grid-template-columns:1.05fr 0.95fr; gap:60px; align-items:center; }
+  .rx-line{ display:flex; align-items:center; gap:10px; margin-bottom:22px; }
+  .rx-line .rx{ font-family:'Poppins'; font-weight:800; font-size:22px; color:var(--primary); font-style:italic; }
+  .rx-line .dashline{ flex:1; height:0; border-top:2px dashed rgba(15,157,88,0.35); }
+  .hero h1{ font-size:clamp(38px,5.4vw,60px); line-height:1.06; margin-bottom:22px; }
+  .hero h1 .accent-text{ background:linear-gradient(120deg,var(--primary),var(--secondary)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .hero p.lead{ font-size:18px; color:var(--text-soft); max-width:480px; margin-bottom:34px; }
+  .hero-actions{ display:flex; flex-wrap:wrap; gap:14px; margin-bottom:44px; }
+  .hero-stats{ display:flex; gap:36px; flex-wrap:wrap; }
+  .hero-stats .stat b{ display:block; font-family:'Poppins'; font-size:26px; color:var(--primary-dark); }
+  .hero-stats .stat span{ font-size:13px; color:var(--text-soft); font-weight:600; }
+
+  .hero-visual{ position:relative; display:flex; align-items:center; justify-content:center; }
+  .pad-card{
+    background:#fff; border-radius:24px; box-shadow:var(--shadow-lg);
+    padding:34px; width:100%; max-width:400px; position:relative; z-index:2;
+    border:1px solid var(--line);
+  }
+  .pad-card .pad-head{ display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:22px; padding-bottom:18px; border-bottom:2px dashed #E5EEE9; }
+  .pad-card .pad-head .who b{ display:block; font-family:'Poppins'; font-size:16px; }
+  .pad-card .pad-head .who span{ font-size:12.5px; color:var(--text-soft); }
+  .pad-card .pad-head .rxmark{ font-family:'Poppins'; font-weight:800; font-size:28px; color:var(--primary); font-style:italic; }
+  .pad-row{ display:flex; align-items:center; gap:12px; padding:11px 0; border-bottom:1px dashed #EEF2F0; }
+  .pad-row:last-child{ border-bottom:none; }
+  .pad-row .chk{ width:22px; height:22px; border-radius:50%; background:rgba(15,157,88,0.12); color:var(--primary-dark); display:flex; align-items:center; justify-content:center; font-size:12px; flex:none; }
+  .pad-row span{ font-size:14.5px; font-weight:600; color:var(--text); }
+  .float-badge{
+    position:absolute; background:#fff; border-radius:16px; box-shadow:var(--shadow);
+    padding:14px 18px; display:flex; align-items:center; gap:10px; font-weight:700; font-size:13.5px;
+    border:1px solid var(--line); z-index:3;
+  }
+  .float-badge.b1{ top:-6%; right:-8%; animation:float1 5s ease-in-out infinite; }
+  .float-badge.b2{ bottom:2%; left:-11%; animation:float2 6s ease-in-out infinite; }
+  .float-badge .ic{ width:34px; height:34px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:16px; flex:none;}
+  .float-badge.b1 .ic{ background:rgba(30,136,229,0.12); }
+  .float-badge.b2 .ic{ background:rgba(0,200,83,0.15); }
+  @keyframes float1{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-12px);} }
+  @keyframes float2{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(10px);} }
+  .cross-bg{ position:absolute; opacity:.5; }
+
+  /* ===== ABOUT ===== */
+  .about-grid{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:64px; align-items:center; }
+  .about-visual{ position:relative; border-radius:24px; overflow:hidden; box-shadow:var(--shadow-lg); aspect-ratio:4/5; background:linear-gradient(135deg,#0F9D58,#1E88E5); }
+  .about-visual img{ width:100%; height:100%; object-fit:cover; mix-blend-mode:multiply; opacity:0.85;}
+  .about-visual .tag{ position:absolute; bottom:22px; left:22px; right:22px; background:rgba(255,255,255,0.94); backdrop-filter:blur(6px); border-radius:16px; padding:18px 20px; }
+  .about-visual .tag b{ font-family:'Poppins'; font-size:15px; display:block; }
+  .about-visual .tag span{ font-size:12.5px; color:var(--text-soft); }
+  .about-list{ display:grid; gap:16px; margin-top:28px; }
+  .about-list li{ display:flex; gap:14px; align-items:flex-start; }
+  .about-list .num{ font-family:'Poppins'; font-weight:800; color:var(--primary); font-size:14px; width:30px; height:30px; border-radius:9px; background:rgba(15,157,88,0.1); display:flex; align-items:center; justify-content:center; flex:none; }
+  .about-list b{ font-size:15px; display:block; }
+  .about-list span{ font-size:14px; color:var(--text-soft); }
+
+  /* ===== CARD GRIDS ===== */
+  .grid-3{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .grid-4{ display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
+  .card{
+    background:var(--card); border-radius:var(--radius); padding:32px 26px;
+    border:1px solid var(--line); transition:all .35s cubic-bezier(.4,0,.2,1); position:relative; overflow:hidden;
+  }
+  .card:hover{ transform:translateY(-8px); box-shadow:var(--shadow-lg); border-color:transparent; }
+  .card .icon{
+    width:54px; height:54px; border-radius:14px; display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(135deg, rgba(15,157,88,0.12), rgba(30,136,229,0.12)); font-size:24px; margin-bottom:18px;
+  }
+  .card h3{ font-size:17.5px; margin-bottom:8px; }
+  .card p{ font-size:14px; color:var(--text-soft); }
+
+  .why-card{ text-align:center; padding:30px 22px; }
+  .why-card .icon{ margin:0 auto 16px; }
+
+  .cat-card{ position:relative; border-radius:18px; overflow:hidden; aspect-ratio:1/1; cursor:pointer; }
+  .cat-card img{ width:100%; height:100%; object-fit:cover; transition:transform .5s ease; }
+  .cat-card:hover img{ transform:scale(1.08); }
+  .cat-card .overlay{ position:absolute; inset:0; background:linear-gradient(0deg, rgba(10,30,22,0.82) 0%, rgba(10,30,22,0.1) 55%, transparent 100%); display:flex; align-items:flex-end; padding:18px; }
+  .cat-card span{ color:#fff; font-weight:700; font-family:'Poppins'; font-size:15px; }
+
+  /* ===== TESTIMONIALS ===== */
+  .test-track{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .test-card{ background:#fff; border-radius:var(--radius); padding:30px 26px; border:1px solid var(--line); }
+  .stars{ color:#F5A623; letter-spacing:2px; margin-bottom:14px; font-size:14px; }
+  .test-card p{ font-size:14.5px; color:var(--text); margin-bottom:20px; line-height:1.65; }
+  .test-who{ display:flex; align-items:center; gap:12px; }
+  .avatar{ width:42px; height:42px; border-radius:50%; background:linear-gradient(135deg,var(--primary),var(--secondary)); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-family:'Poppins'; flex:none; }
+  .test-who b{ font-size:14px; display:block; }
+  .test-who span{ font-size:12px; color:var(--text-soft); }
+
+  /* ===== GALLERY ===== */
+  .gallery-grid{ display:grid; grid-template-columns:repeat(4,1fr); grid-auto-rows:150px; gap:16px; }
+  .gallery-grid .g1{ grid-column:span 2; grid-row:span 2; }
+  .gallery-item{ border-radius:16px; overflow:hidden; position:relative; }
+  .gallery-item img{ width:100%; height:100%; object-fit:cover; transition:transform .5s ease; }
+  .gallery-item:hover img{ transform:scale(1.06); }
+  .gallery-item .cap{ position:absolute; left:12px; bottom:12px; background:rgba(255,255,255,0.92); padding:6px 12px; border-radius:99px; font-size:12px; font-weight:700; }
+
+  /* ===== CTA BANNER ===== */
+  .cta-banner{
+    border-radius:28px; padding:56px; background:linear-gradient(120deg, var(--primary-dark), var(--secondary));
+    color:#fff; display:flex; align-items:center; justify-content:space-between; gap:30px; flex-wrap:wrap;
+    position:relative; overflow:hidden;
+  }
+  .cta-banner::before{ content:""; position:absolute; width:340px; height:340px; border-radius:50%; background:rgba(255,255,255,0.08); top:-150px; right:-80px; }
+  .cta-banner h3{ font-size:26px; margin-bottom:6px; color:#fff; position:relative;}
+  .cta-banner p{ color:rgba(255,255,255,0.85); font-size:15px; position:relative;}
+  .cta-banner .btn-outline{ background:#fff; border:none; position:relative; }
+
+  /* ===== MAP / CONTACT ===== */
+  .contact-wrap{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:0; border-radius:24px; overflow:hidden; box-shadow:var(--shadow-lg); }
+  .contact-info{ background:linear-gradient(160deg, var(--primary-dark), #0a5c34); color:#fff; padding:48px 40px; }
+  .contact-info h3{ color:#fff; font-size:24px; margin-bottom:8px; }
+  .contact-info > p{ color:rgba(255,255,255,0.78); font-size:14.5px; margin-bottom:32px; }
+  .c-row{ display:flex; gap:14px; align-items:flex-start; margin-bottom:24px; }
+  .c-row .ic{ width:40px; height:40px; border-radius:11px; background:rgba(255,255,255,0.14); display:flex; align-items:center; justify-content:center; flex:none; font-size:17px; }
+  .c-row b{ display:block; font-size:14px; margin-bottom:3px; }
+  .c-row span, .c-row a{ font-size:13.5px; color:rgba(255,255,255,0.8); }
+  .contact-btns{ display:flex; gap:10px; margin-top:8px; flex-wrap:wrap; }
+  .contact-btns .btn{ padding:12px 18px; font-size:13.5px; }
+  .map-embed{ min-height:420px; position:relative; }
+  .map-embed iframe{ width:100%; height:100%; border:0; position:absolute; inset:0; }
+
+  /* ===== FAQ ===== */
+  .faq-list{ max-width:760px; margin:0 auto; }
+  .faq-item{ background:#fff; border:1px solid var(--line); border-radius:16px; margin-bottom:14px; overflow:hidden; transition:.3s; }
+  .faq-q{ display:flex; justify-content:space-between; align-items:center; padding:20px 24px; cursor:pointer; font-weight:600; font-size:15.5px; }
+  .faq-q .plus{ width:26px; height:26px; border-radius:50%; background:rgba(15,157,88,0.1); color:var(--primary-dark); display:flex; align-items:center; justify-content:center; flex:none; transition:transform .3s; font-size:15px; }
+  .faq-item.open .plus{ transform:rotate(45deg); }
+  .faq-a{ max-height:0; overflow:hidden; transition:max-height .35s ease; }
+  .faq-a p{ padding:0 24px 20px; color:var(--text-soft); font-size:14.5px; }
+
+  /* ===== FOOTER ===== */
+  footer{ background:#0B241A; color:rgba(255,255,255,0.7); padding:70px 0 24px; }
+  .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:40px; margin-bottom:50px; }
+  .footer-grid .brand{ color:#fff; margin-bottom:14px; }
+  .footer-grid p{ font-size:13.5px; line-height:1.7; }
+  footer h4{ color:#fff; font-size:15px; margin-bottom:18px; }
+  footer ul li{ margin-bottom:11px; }
+  footer ul a{ font-size:13.5px; transition:color .2s; }
+  footer ul a:hover{ color:var(--accent); }
+  .footer-bottom{ border-top:1px solid rgba(255,255,255,0.1); padding-top:22px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-size:13px; }
+  .social-row{ display:flex; gap:10px; }
+  .social-row a{ width:36px; height:36px; border-radius:10px; background:rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; transition:.2s; }
+  .social-row a:hover{ background:var(--primary); }
+
+  /* ===== FLOATING BUTTONS ===== */
+  .fab-stack{ position:fixed; right:22px; bottom:22px; display:flex; flex-direction:column; gap:12px; z-index:900; }
+  .fab{ width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:24px; box-shadow:0 10px 26px rgba(0,0,0,0.22); color:#fff; transition:.25s; }
+  .fab:hover{ transform:scale(1.1); }
+  .fab.call{ background:linear-gradient(135deg,var(--secondary),#1565C0); }
+  .fab.wa{ background:#25D366; }
+  .fab.top{ background:#fff; color:var(--primary-dark); border:1px solid var(--line); opacity:0; pointer-events:none; transform:translateY(10px); }
+  .fab.top.show{ opacity:1; pointer-events:auto; transform:translateY(0); }
+
+  [data-aos]{ opacity:0; transform:translateY(26px); transition:opacity .7s ease, transform .7s ease; }
+  [data-aos].aos-in{ opacity:1; transform:translateY(0); }
+
+  @media(max-width:980px){
+    .hero-grid, .about-grid{ grid-template-columns:1fr; }
+    .hero-visual{ order:-1; max-width:420px; margin:0 auto 20px; }
+    .grid-3, .test-track{ grid-template-columns:1fr 1fr; }
+    .grid-4{ grid-template-columns:1fr 1fr; }
+    .contact-wrap{ grid-template-columns:1fr; }
+    .map-embed{ min-height:320px; }
+    .footer-grid{ grid-template-columns:1fr 1fr; }
+    .nav-links{ display:none; }
+    .nav-cta .btn-outline{ display:none; }
+    .burger{ display:flex; }
+    .mobile-menu.open{ display:flex; }
+  }
+  @media(max-width:640px){
+    section{ padding:70px 0; }
+    .grid-3, .grid-4, .test-track{ grid-template-columns:1fr; }
+    .gallery-grid{ grid-template-columns:1fr 1fr; grid-auto-rows:130px; }
+    .gallery-grid .g1{ grid-column:span 2; grid-row:span 1; }
+    .cta-banner{ padding:34px 26px; text-align:center; justify-content:center; }
+    .footer-grid{ grid-template-columns:1fr; gap:30px; }
+    .footer-bottom{ flex-direction:column; text-align:center; }
+    .float-badge{ display:none; }
+    .hero{ padding-top:132px; }
+  }
+  @media(prefers-reduced-motion: reduce){
+    *{ animation:none !important; transition:none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="brand"><span class="brand-mark"></span>Pakistan Medical Store</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#categories">Categories</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <a href="tel:03312065480" class="btn btn-outline btn-sm">📞 Call Now</a>
+      <a href="https://wa.me/923312065480" target="_blank" class="btn btn-whatsapp btn-sm">WhatsApp</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#categories">Categories</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+    <a href="#faq">FAQ</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="rx-line"><span class="rx">℞</span><span class="dashline"></span></div>
+        <div class="eyebrow"><span class="dot"></span>Trusted Since Day One · Latifabad, Hyderabad</div>
+        <h1>Genuine medicines,<br><span class="accent-text">delivered with care.</span></h1>
+        <p class="lead">Pakistan Medical Store is Latifabad's trusted neighbourhood pharmacy — prescription medicines, healthcare products, and a team that actually knows your name.</p>
+        <div class="hero-actions">
+          <a href="tel:03312065480" class="btn btn-primary">📞 Call Now</a>
+          <a href="https://wa.me/923312065480" target="_blank" class="btn btn-whatsapp">💬 WhatsApp Us</a>
+          <a href="https://maps.app.goo.gl/e1oMLYmzSg8UfihK6" target="_blank" class="btn btn-outline">📍 Get Directions</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>100%</b><span>Genuine Medicines</span></div>
+          <div class="stat"><b>7 Days</b><span>Open Every Week</span></div>
+          <div class="stat"><b>5.0★</b><span>Customer Rated</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="pad-card">
+          <div class="pad-head">
+            <div class="who"><b>Pakistan Medical Store</b><span>Latifabad, Hyderabad</span></div>
+            <div class="rxmark">℞</div>
+          </div>
+          <div class="pad-row"><div class="chk">✓</div><span>Prescription Medicines</span></div>
+          <div class="pad-row"><div class="chk">✓</div><span>OTC & Healthcare Products</span></div>
+          <div class="pad-row"><div class="chk">✓</div><span>Baby & Personal Care</span></div>
+          <div class="pad-row"><div class="chk">✓</div><span>Medical Equipment</span></div>
+          <div class="pad-row"><div class="chk">✓</div><span>Diabetes & BP Monitoring</span></div>
+        </div>
+        <div class="float-badge b1"><div class="ic">🩺</div><div>Expert<br>Staff</div></div>
+        <div class="float-badge b2"><div class="ic">⚡</div><div>Quick<br>Service</div></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container about-grid">
+    <div class="about-visual" data-aos>
+      <img src="image-2.jpg" alt="Pharmacist arranging medicine shelves" loading="lazy">
+      <div class="tag"><b>Serving Latifabad</b><span>Genuine products, expert guidance, every visit.</span></div>
+    </div>
+    <div data-aos>
+      <div class="eyebrow"><span class="dot"></span>About Us</div>
+      <h2 class="section-title">A pharmacy that treats you like a neighbour, not a number.</h2>
+      <p class="section-sub" style="max-width:620px;">Pakistan Medical Store has been serving the Hyderabad community by providing genuine medicines, healthcare products, and prescription medicines, backed by attentive customer service. Our goal is simple: every customer leaves with trusted pharmaceutical products and the right advice to go with them.</p>
+      <ul class="about-list">
+        <li><span class="num">01</span><div><b>Genuine & Verified Stock</b><span>Sourced from licensed distributors only.</span></div></li>
+        <li><span class="num">02</span><div><b>Experienced Pharmacy Staff</b><span>Friendly guidance for prescriptions and OTC needs.</span></div></li>
+        <li><span class="num">03</span><div><b>Fair, Transparent Pricing</b><span>Honest rates on every product, every time.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" style="background:#fff;">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="margin-left:auto;margin-right:auto;"><span class="dot"></span>Our Services</div>
+      <h2 class="section-title">Everything your family's health needs</h2>
+      <p class="section-sub">From daily prescriptions to specialised monitoring — one counter, complete care.</p>
+    </div>
+    <div class="grid-4">
+      <div class="card" data-aos><div class="icon">💊</div><h3>Prescription Medicines</h3><p>Accurate dispensing for every prescription, verified twice.</p></div>
+      <div class="card" data-aos><div class="icon">🩹</div><h3>OTC Medicines</h3><p>Everyday relief medicines available without a prescription.</p></div>
+      <div class="card" data-aos><div class="icon">🧴</div><h3>Healthcare Products</h3><p>Trusted wellness and personal healthcare essentials.</p></div>
+      <div class="card" data-aos><div class="icon">🍼</div><h3>Baby Care</h3><p>Gentle, paediatrician-approved products for little ones.</p></div>
+      <div class="card" data-aos><div class="icon">🧼</div><h3>Personal Care</h3><p>Everyday hygiene and personal wellness products.</p></div>
+      <div class="card" data-aos><div class="icon">🩺</div><h3>Medical Equipment</h3><p>Home-use devices for care between doctor visits.</p></div>
+      <div class="card" data-aos><div class="icon">🌿</div><h3>Health Supplements</h3><p>Vitamins and supplements for everyday wellbeing.</p></div>
+      <div class="card" data-aos><div class="icon">🚑</div><h3>First Aid Supplies</h3><p>Essentials for home, office, and travel first-aid kits.</p></div>
+      <div class="card" data-aos><div class="icon">❤️</div><h3>Blood Pressure Monitoring</h3><p>Quick, accurate BP checks at the counter.</p></div>
+      <div class="card" data-aos><div class="icon">🩸</div><h3>Diabetes Care</h3><p>Testing supplies and management products in stock.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section>
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="margin-left:auto;margin-right:auto;"><span class="dot"></span>Why Choose Us</div>
+      <h2 class="section-title">Trusted by the neighbourhood for a reason</h2>
+    </div>
+    <div class="grid-4">
+      <div class="card why-card" data-aos><div class="icon">✅</div><h3>100% Genuine</h3><p>Every product verified and authentic.</p></div>
+      <div class="card why-card" data-aos><div class="icon">👨‍⚕️</div><h3>Experienced Staff</h3><p>Knowledgeable team ready to assist.</p></div>
+      <div class="card why-card" data-aos><div class="icon">💰</div><h3>Affordable Prices</h3><p>Fair pricing without compromise.</p></div>
+      <div class="card why-card" data-aos><div class="icon">🏪</div><h3>Trusted Local Store</h3><p>A familiar name in Latifabad.</p></div>
+      <div class="card why-card" data-aos><div class="icon">🤝</div><h3>Friendly Service</h3><p>Warm, respectful care every visit.</p></div>
+      <div class="card why-card" data-aos><div class="icon">📍</div><h3>Easy Location</h3><p>Convenient, accessible store front.</p></div>
+      <div class="card why-card" data-aos><div class="icon">⚡</div><h3>Quick Assistance</h3><p>Minimal wait, fast service.</p></div>
+      <div class="card why-card" data-aos><div class="icon">⭐</div><h3>Quality Products</h3><p>Only trusted brands on our shelves.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories" style="background:#fff;">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="margin-left:auto;margin-right:auto;"><span class="dot"></span>Featured Categories</div>
+      <h2 class="section-title">Browse by category</h2>
+    </div>
+    <div class="grid-4">
+      <div class="cat-card" data-aos><img loading="lazy" src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?q=80&w=600&auto=format&fit=crop" alt="Medicine"><div class="overlay"><span>Medicine</span></div></div>
+      <div class="cat-card" data-aos><img loading="lazy" src="https://images.unsplash.com/photo-1550572017-edd951b55104?q=80&w=600&auto=format&fit=crop" alt="Vitamins"><div class="overlay"><span>Vitamins</span></div></div>
+      <div class="cat-card" data-aos><img loading="lazy" src="https://images.unsplash.com/photo-1615486364898-5c8d3b2b9b6a?q=80&w=600&auto=format&fit=crop" alt="Baby Care"><div class="overlay"><span>Baby Care</span></div></div>
+      <div class="cat-card" data-aos><img loading="lazy" src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=600&auto=format&fit=crop" alt="Medical Equipment"><div class="overlay"><span>Medical Equipment</span></div></div>
+      <div class="cat-card" data-aos><img loading="lazy" src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?q=80&w=600&auto=format&fit=crop" alt="Health Supplements"><div class="overlay"><span>Supplements</span></div></div>
+      <div class="cat-card" data-aos><img loading="lazy" src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?q=80&w=600&auto=format&fit=crop" alt="First Aid"><div class="overlay"><span>First Aid</span></div></div>
+      <div class="cat-card" data-aos><img loading="lazy" src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=600&auto=format&fit=crop" alt="Personal Care"><div class="overlay"><span>Personal Care</span></div></div>
+      <div class="cat-card" data-aos><img loading="lazy" src="https://images.unsplash.com/photo-1580281657702-257584239a55?q=80&w=600&auto=format&fit=crop" alt="Health Devices"><div class="overlay"><span>Health Devices</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER 1 -->
+<section style="padding:60px 0;">
+  <div class="container">
+    <div class="cta-banner" data-aos>
+      <div><h3>Need Medicines?</h3><p>Call Pakistan Medical Store today — we're ready to help.</p></div>
+      <a href="tel:03312065480" class="btn btn-outline">📞 Call Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="reviews" style="background:#fff;">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="margin-left:auto;margin-right:auto;"><span class="dot"></span>Customer Reviews</div>
+      <h2 class="section-title">What our customers say</h2>
+    </div>
+    <div class="test-track">
+      <div class="test-card" data-aos>
+        <div class="stars">★★★★★</div>
+        <p>"Excellent medical store with quality medicines and cooperative staff. Highly recommended."</p>
+        <div class="test-who"><div class="avatar">RK</div><div><b>Rkrkp Khatri</b><span>Verified Customer</span></div></div>
+      </div>
+      <div class="test-card" data-aos>
+        <div class="stars">★★★★★</div>
+        <p>"Always find what I need in stock, and the staff take the time to explain dosage clearly."</p>
+        <div class="test-who"><div class="avatar">AS</div><div><b>Ayesha Siddiqui</b><span>Verified Customer</span></div></div>
+      </div>
+      <div class="test-card" data-aos>
+        <div class="stars">★★★★★</div>
+        <p>"Genuine products and fair prices. My family's go-to pharmacy in Latifabad."</p>
+        <div class="test-who"><div class="avatar">MB</div><div><b>Muhammad Bilal</b><span>Verified Customer</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="margin-left:auto;margin-right:auto;"><span class="dot"></span>Store Gallery</div>
+      <h2 class="section-title">A look inside our store</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item g1" data-aos><img loading="lazy" src="image-1.jpg" alt="Store exterior"><div class="cap">Store Exterior</div></div>
+      <div class="gallery-item" data-aos><img loading="lazy" src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?q=80&w=600&auto=format&fit=crop" alt="Medicine shelves"><div class="cap">Shelves</div></div>
+      <div class="gallery-item" data-aos><img loading="lazy" src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=600&auto=format&fit=crop" alt="Counter"><div class="cap">Counter</div></div>
+      <div class="gallery-item" data-aos><img loading="lazy" src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?q=80&w=600&auto=format&fit=crop" alt="Products"><div class="cap">Products</div></div>
+      <div class="gallery-item" data-aos><img loading="lazy" src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?q=80&w=600&auto=format&fit=crop" alt="Interior"><div class="cap">Interior</div></div>
+      <div class="gallery-item" data-aos><img loading="lazy" src="https://images.unsplash.com/photo-1583912267550-d44c9c9c6c1c?q=80&w=600&auto=format&fit=crop" alt="Healthcare products"><div class="cap">Healthcare</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER 2 -->
+<section style="padding:20px 0 60px;">
+  <div class="container">
+    <div class="cta-banner" data-aos style="background:linear-gradient(120deg,#1E88E5,#0F9D58);">
+      <div><h3>Looking for Healthcare Products?</h3><p>Visit our medical store today — we're just around the corner.</p></div>
+      <a href="https://maps.app.goo.gl/e1oMLYmzSg8UfihK6" target="_blank" class="btn btn-outline">📍 Get Directions</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT + MAP -->
+<section id="contact" style="background:#fff;">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="margin-left:auto;margin-right:auto;"><span class="dot"></span>Visit or Contact Us</div>
+      <h2 class="section-title">Find us in Latifabad, Hyderabad</h2>
+    </div>
+    <div class="contact-wrap" data-aos>
+      <div class="contact-info">
+        <h3>Pakistan Medical Store</h3>
+        <p>We're here every day to help with your medicines and healthcare needs.</p>
+        <div class="c-row"><div class="ic">📍</div><div><b>Address</b><span>984X+X6R, Unit 10 Latifabad, Hyderabad, Sindh 71000, Pakistan</span></div></div>
+        <div class="c-row"><div class="ic">📞</div><div><b>Phone</b><br><a href="tel:03312065480">0331-2065480</a></div></div>
+        <div class="c-row"><div class="ic">🕐</div><div><b>Hours</b><span>Open Daily · 8:00 AM – 12:00 AM</span></div></div>
+        <div class="contact-btns">
+          <a href="tel:03312065480" class="btn btn-primary">📞 Call</a>
+          <a href="https://wa.me/923312065480" target="_blank" class="btn btn-whatsapp">💬 WhatsApp</a>
+          <a href="https://maps.app.goo.gl/e1oMLYmzSg8UfihK6" target="_blank" class="btn btn-outline" style="background:rgba(255,255,255,0.14);color:#fff;border-color:rgba(255,255,255,0.3);">🗺️ Google Maps</a>
+        </div>
+      </div>
+      <div class="map-embed">
+        <iframe src="https://www.google.com/maps?q=984X%2BX6R,+Unit+10+Latifabad,+Hyderabad,+Sindh+71000,+Pakistan&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Pakistan Medical Store location map"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="margin-left:auto;margin-right:auto;"><span class="dot"></span>FAQ</div>
+      <h2 class="section-title">Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item" data-aos>
+        <div class="faq-q">Do you provide prescription medicines?<span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes, we dispense prescription medicines accurately and can advise on dosage and usage.</p></div>
+      </div>
+      <div class="faq-item" data-aos>
+        <div class="faq-q">Do you have healthcare products?<span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes, we stock a wide range of healthcare products including supplements, baby care, and medical equipment.</p></div>
+      </div>
+      <div class="faq-item" data-aos>
+        <div class="faq-q">Can I call before visiting?<span class="plus">+</span></div>
+        <div class="faq-a"><p>Absolutely — call us at 0331-2065480 to check stock or ask any questions before you visit.</p></div>
+      </div>
+      <div class="faq-item" data-aos>
+        <div class="faq-q">Where are you located?<span class="plus">+</span></div>
+        <div class="faq-a"><p>We're at 984X+X6R, Unit 10 Latifabad, Hyderabad, Sindh 71000, Pakistan. Tap "Get Directions" above for Google Maps.</p></div>
+      </div>
+      <div class="faq-item" data-aos>
+        <div class="faq-q">What are your business hours?<span class="plus">+</span></div>
+        <div class="faq-a"><p>We're open daily from 8:00 AM to 12:00 AM to serve your medicine and healthcare needs.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER 3 -->
+<section style="padding:20px 0 90px;">
+  <div class="container">
+    <div class="cta-banner" data-aos>
+      <div><h3>Need Assistance?</h3><p>Our team is ready to help — reach out any time.</p></div>
+      <a href="#contact" class="btn btn-outline">✉️ Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#home" class="brand"><span class="brand-mark"></span>Pakistan Medical Store</a>
+        <p>Genuine medicines, healthcare products, and trusted pharmacy service in Latifabad, Hyderabad.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Prescription Medicines</a></li>
+          <li><a href="#services">Healthcare Products</a></li>
+          <li><a href="#services">Medical Equipment</a></li>
+          <li><a href="#services">Diabetes & BP Care</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>984X+X6R, Unit 10 Latifabad, Hyderabad, Sindh 71000, Pakistan</li>
+          <li><a href="tel:03312065480">0331-2065480</a></li>
+          <li><a href="https://maps.app.goo.gl/e1oMLYmzSg8UfihK6" target="_blank">View on Google Maps</a></li>
+        </ul>
+        <div class="social-row" style="margin-top:16px;">
+          <a href="https://wa.me/923312065480" target="_blank" aria-label="WhatsApp">💬</a>
+          <a href="tel:03312065480" aria-label="Call">📞</a>
+          <a href="https://maps.app.goo.gl/e1oMLYmzSg8UfihK6" target="_blank" aria-label="Maps">📍</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Pakistan Medical Store. All rights reserved.</span>
+      <span>Latifabad, Hyderabad, Sindh, Pakistan</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="fab-stack">
+  <button class="fab top" id="toTop" aria-label="Scroll to top">↑</button>
+  <a href="https://wa.me/923312065480" target="_blank" class="fab wa" aria-label="WhatsApp">💬</a>
+  <a href="tel:03312065480" class="fab call" aria-label="Call">📞</a>
+</div>
+
+<script>
+  // Navbar scroll state
+  const navbar = document.getElementById('navbar');
+  const toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 30);
+    toTop.classList.toggle('show', window.scrollY > 500);
+  });
+  toTop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+  // Mobile menu
+  const burger = document.getElementById('burger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const q = item.querySelector('.faq-q');
+    const a = item.querySelector('.faq-a');
+    q.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-a').style.maxHeight = null; });
+      if(!isOpen){ item.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
+    });
+  });
+
+  // Scroll reveal animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add('aos-in'); observer.unobserve(entry.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('[data-aos]').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
